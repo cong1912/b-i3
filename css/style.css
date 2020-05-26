@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    font-family: 'Montserrat',sans-serif;
+}
 /*header*/
 header{
     height: 100vh;
-   
+
     background:  linear-gradient(rgba(31, 31, 31, 0.4), rgba(85, 85, 85, 0.5)),url('../img/1.jpg') no-repeat center center /cover;
 }
 .lead{
@@ -21,7 +23,7 @@ header{
     transition:  color .5s;
 }
 .menu-item:hover{
-  color: #70aed2;  
+  color: #70aed2;
 }
 .nav-active{
     color: #70aed2;
@@ -81,7 +83,7 @@ header{
 /* mission*/
 .mission{
     background: #151f20;
-   
+
 }
 .underline{
     width: 150px;
@@ -152,13 +154,13 @@ header{
 }
 .active-item{
     color: #70aed2;
-    
+
 }
 /*end Gallery*/
 /*Customers*/
 .customers{
     background: #151f20;
-}  
+}
 /*end of Customers*/
 
 /*pricing*/
@@ -166,7 +168,7 @@ header{
     background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url('../img/2.jpg')  no-repeat center  /cover;
     box-shadow: 7px 18px 50px #555;
     max-width: 400px;
-   
+
 }
 .card-list-item{
     border-bottom: 1px groove #eee ;
@@ -196,7 +198,7 @@ header{
 .price-card-button:hover{
     background: #f9793d;
     transform: translateY(-5px);
-    
+
 }
 .moveFromLeft{
     animation-name: moveFromLeft;
@@ -244,7 +246,7 @@ header{
 /*end of pricing*/
 /*Contact*/
 .contact{
-    background: linear-gradient(105deg, 
+    background: linear-gradient(105deg,
     rgb(42, 55, 56) 0%,
     rgba(42, 57, 58, 0.95) 50%,
     transparent 50%),
@@ -285,7 +287,7 @@ header{
     transform: translate(20px,20px);
     opacity: 0;
     visibility: hidden;
-    
+
 }
 @media(max-width:992px){
     .contact{
