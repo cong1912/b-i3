@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('.nav-button').toggleClass('change')
     });
     $(window).scroll(function(){
-        let position =$(this).scrollTop();    
+        let position =$(this).scrollTop();
         console.log(position);
         if(position>=200){
             $('.nav-menu').addClass('custom-navbar');
@@ -16,11 +16,12 @@ $(document).ready(function(){
         console.log(position);
         if(position>=650){
             $('.camera-img').addClass('fromLeft');
-       
+
             $('.mission-text').addClass('fromRight');
         }
         else{
             $('.camera-img').removeClass('fromLeft');
+            $('.mission-text').removeClass('fromRight');
         }
     });
     $('.gallery-list-item').click(function(){
@@ -48,4 +49,15 @@ $(document).ready(function(){
             $('.card-3').removeClass('moveFromRight');
         }
     });
+    $('#nav a').on('click',function(event){
+        if(this.hash != ''){
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 80
+            },
+            800);
+        }
+    });
 });
+
