@@ -198,7 +198,7 @@ header{
 }
 .moveFromLeft{
     animation-name: moveFromLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .moveFromRight{
     animation-name: moveFromRight;
@@ -260,18 +260,10 @@ header{
     border-color: transparent;
     box-shadow: none;
     color: #fff;
-    border-bottom:2px solid #f55938 ;
+
 
 }
-.submit-button{
-    background: #f5593d;
-    color: #eee;
-    border-radius: 5px;
-}
-.submit-button:hover{
-    background: #f9793d;
-    transform: translateY(-3px);
-}
+
 .label{
     color: #777;
     display: block;

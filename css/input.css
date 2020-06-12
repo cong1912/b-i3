@@ -32,7 +32,8 @@
 .submit-button{
     background: #f5593d;
     color: #eee;
-    border-radius: 5px;
+    transition: all .3s;
+    border-color: #f55938;
 }
 .submit-button:hover{
     background: #f9793d;

@@ -49,15 +49,19 @@ $(document).ready(function(){
             $('.card-3').removeClass('moveFromRight');
         }
     });
-    $('#nav a').on('click',function(event){
-        if(this.hash != ''){
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 80
-            },
-            800);
-        }
+    // $('#nav a').on('click',function(event){
+    //     if(this.hash != ''){
+    //         event.preventDefault();
+    //         const hash = this.hash;
+    //         $('html, body').animate({
+    //             scrollTop: $(hash).offset().top - 80
+    //         },
+    //         800);
+    //     }
+    // });
+    $('body').scrollspy({
+        target: '.navbar',offset:50
     });
+
 });
 
